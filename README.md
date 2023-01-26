@@ -9,4 +9,6 @@
 - kuberctl rollout undo deployment NOME_CONTAINER ---> Volta para última revisão anteriomente atualizada
 - kuberctl rollout undo deployment NOME_CONTAINER --to-revidion=NÚMERO_DA_REVISÃO ---> Vai para versão específicada
 - kubectl describe deployment NOME_CONTAINER ---> Mostra vários detalhes do container
+- kubectl get service ou svc ---> Vizualiza os serviços que estão rodando
+- kubectl port-forward svc/NOME_DO_SERVICE 8000:80 ---> a porta 8000 que é direcionada para 80 para ter acesso ao SERVICE
 - 

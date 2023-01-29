@@ -15,4 +15,7 @@
 - kubectl exec -it NOME_CONTAINER/POD -- bash ---> Acessa o container
 - kubectl logs NOME_CONTAINER ---> Verifica os logs do container
 - kubectl apply -f DIRETORIO/AQUIVO.yaml && watch -n1 kubectl get pods ---> Faz o apply e já verifica em tempo real os pods rodando
-
+- kubectl get apiservices --->Lista todos serviços que temos na API
+- kubectl top pod NOME_CONTAINER ---> trás o consumo de CPU e memória do pod
+- kubectl get hpa ---> verifica os hpa
+- kubectl run -it fortio --rm --image=fortio/fortio -- load -qps 800 -t 120s -c 70 "http://goserver-service/healthz" ---> será possível ver os pods escalando no teste de stress
